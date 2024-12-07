@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react'
-import myBabyGirl from "./baby_girl.jpg"
+import bikeImg from "./bike.jpg"
 
 function App() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -59,7 +59,7 @@ function App() {
   };
   
 
-  console.log(rotate())
+  // console.log(rotate())
 
   return (
     <div className="App">
@@ -67,14 +67,15 @@ function App() {
         transform: rotate()
       }}>
         <h1 className='head'>Suzuki Hayabusa</h1>
-        <img src={myBabyGirl} className="card_img" />
+        <img src={bikeImg} className="card_img" />
         <p>
-        Famed for its abundant power, agility and majestic presence. Legendary for establishing new levels of ultimate sport performance, and for retaining the number one position for the past two decades
+          {/* Copied from Suzuki Website */}
+          Famed for its abundant power, agility and majestic presence. Legendary for establishing new levels of ultimate sport performance, and for retaining the number one position for the past two decades
         </p>
         <hr />
         <h3>Price: ₹ 16,00,000</h3>
         <div className='footer'>
-          <a href="https://www.suzukimotorcycle.co.in/product-details/hayabusa" className='btn' target='_blank'>Buy Now!</a>
+          <a href="#" className='btn' target='_blank'>Buy Now!</a>
         </div>
       </div>
     </div>
